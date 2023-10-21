@@ -3,8 +3,6 @@
 Simple helper function
 """
 
-import csv
-
 
 def index_range(page=None, page_size=None):
     """
