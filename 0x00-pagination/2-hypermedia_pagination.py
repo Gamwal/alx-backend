@@ -59,7 +59,7 @@ class Server:
             return self.dataset()[page_indices[0]:page_indices[1]]
         except IndexError:
             return []
-        
+
     def get_hyper(self, page: int = 1, page_size: int = 10):
         """
         class function to get hypermedia style
@@ -77,9 +77,9 @@ class Server:
             prev_page = page - 1
         else:
             prev_page = None
-        
+
         summary_dict = {"page_size": page_size, "page": page,
                         "data": data, "next_page": next_page,
                         "prev_page": prev_page, "total_pages": total_pages}
-        
+
         return summary_dict
